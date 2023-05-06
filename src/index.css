@@ -84,7 +84,6 @@ main {
   background-color: var(--very-pale-blue);
   padding: 1rem;
   border-radius: 10px;
-  font-size: 13px;
 }
 
 .card-plan-price {
@@ -102,6 +101,7 @@ main {
 
 .card-plan .change {
   font-weight: 900;
+  font-size: 14px;
 }
 
 .card-body .btn {
