@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+main {
+  background-image: url("./assets/pattern-background-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--pale-blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    background-image: url("./assets/pattern-background-desktop.svg");
+  }
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 450px;
+}
+
+.card-image {
+  background-color: #fff;
+}
+
+.card-image img {
+  size: fill;
+}
+
+.card-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 1.5rem;
+  background-color: #fff;
+  color: var(--dark-blue);
+}
+
+.card-heading {
+  font-weight: 900;
+}
+
+.card-text {
+  opacity: 0.7;
+  max-width: 300px;
+  margin: auto;
+}
+
+.card-plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--very-pale-blue);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.card-plan-price {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.annual {
+  font-weight: 900;
+}
+
+.card-price {
+  opacity: 0.7;
+}
+
+.card-plan .change {
+  font-weight: 900;
+}
+
+.card-body .btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--bright-blue);
+  padding: 1rem;
+  border-radius: 10px;
+  /* box-shadow: 2px 2px 2px 2px var(--bright-blue); */
+}
+
+.card-order {
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-weight: 700;
+  opacity: 0.7;
+}
